@@ -26,8 +26,10 @@ content:
         list: true
         blockKey: type
         blocks:
-          - name: hero
-            component: hero
+          - name: title
+            fields:
+            - name: text
+              type: string
           - name: text
             fields:
             - name: body
