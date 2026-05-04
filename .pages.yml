@@ -20,6 +20,18 @@ content:
       - { name: tags, label: Tags, type: string, list: true }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: rich-text, format: html }
+      - name: sections
+        label: Sections
+        type: block
+        list: true
+        blockKey: type
+        blocks:
+          - name: hero
+            component: hero
+          - name: text
+            fields:
+            - name: body
+              type: rich-text
   - name: about
     label: About page
     type: file
